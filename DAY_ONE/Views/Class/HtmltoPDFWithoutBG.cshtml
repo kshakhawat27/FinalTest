@@ -1,7 +1,6 @@
 ﻿@{
     ViewBag.Title = "HtmltoPDFWithoutBG";
 }
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,6 +33,7 @@
             table
             {
                 width: 100%;
+                
             }
             tr
             {
@@ -51,11 +51,10 @@
             }
             .BG
             {
-               
             }
             .data
             {
-                
+               
             }
         </style>
         <div class="BG">
@@ -65,7 +64,9 @@
             <div class="data">
                 @* <input type="text" id="GridHtml3" name="GridHtml7" />*@ @* <div class="testdiv">*@
                 <img src="http://localhost:3367/UploadFile/evaly.jpg" alt="" id="imgLogo" runat="server"
-                    replace> <br /> <br /> 
+                    replace>
+                <br />
+                <br />
                 <p style="text-align: center; font-weight: bold; color: black;">
                     <img src="http://localhost:3367/UploadFile/BD.jpg" alt="" id="imgHead" runat="server"
                         replace>
@@ -100,7 +101,6 @@
                         <td>
                             <img src="http://localhost:3367/UploadFile/Ban.jpg" alt="" id="imgTable" runat="server"
                                 replace>
-                          
                         </td>
                         <td>
                             BAN
@@ -120,11 +120,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="http://localhost:3367/UploadFile/Ban.jpg" alt="" id="imgTable" runat="server"
+                            <img src="http://localhost:3367/UploadFile/Aus.jpg" alt="" id="imgTable" runat="server"
                                 replace>
                         </td>
                         <td>
-                            BAN
+                            Australia
                         </td>
                         <td>
                             8
@@ -141,11 +141,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="http://localhost:3367/UploadFile/Ban.jpg" alt="" id="imgTable" runat="server"
+                            <img src="http://localhost:3367/UploadFile/England.jpg" alt="" id="imgTable" runat="server"
                                 replace>
                         </td>
                         <td>
-                            BAN
+                            England
                         </td>
                         <td>
                             8
@@ -162,11 +162,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="http://localhost:3367/UploadFile/Ban.jpg" alt="" id="imgTable" runat="server"
+                            <img src="http://localhost:3367/UploadFile/NZ.png" alt="" id="imgTable" runat="server"
                                 replace>
                         </td>
                         <td>
-                            BAN
+                            New Zealand
                         </td>
                         <td>
                             8
@@ -183,11 +183,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="http://localhost:3367/UploadFile/Ban.jpg" alt="" id="imgTable" runat="server"
+                            <img src="http://localhost:3367/UploadFile/Pak.png" alt="" id="imgTable" runat="server"
                                 replace>
                         </td>
                         <td>
-                            BAN
+                            Pakistan
                         </td>
                         <td>
                             8
@@ -204,11 +204,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="http://localhost:3367/UploadFile/Ban.jpg" alt="" id="imgTable" runat="server"
+                            <img src="http://localhost:3367/UploadFile/WI.png" alt="" id="imgTable" runat="server"
                                 replace>
                         </td>
                         <td>
-                            BAN
+                            West Indies
                         </td>
                         <td>
                             8
@@ -225,11 +225,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="http://localhost:3367/UploadFile/Ban.jpg" alt="" id="imgTable" runat="server"
+                            <img src="http://localhost:3367/UploadFile/India.jpg" alt="" id="imgTable" runat="server"
                                 replace>
                         </td>
                         <td>
-                            BAN
+                        India
                         </td>
                         <td>
                             8
@@ -242,29 +242,39 @@
                         </td>
                         <td>
                             50
-                        </td>
-                    </tr>
-                </table>
-                <br />
-                <br />
-                <br />
-                <br />
-                <table>
-                    <tr>
-                        <td class="col-sm-6 col-md-6 col-lg-6" style="text-align: center">
-                            <img src="http://localhost:3367/UploadFile/icc.jpg" alt="" id="imgFooter1" runat="server"
-                                replace>
-                        </td>
-                        <td class="col-sm-6 col-md-6 col-lg-6" style="text-align: center">
-                            <img src="http://localhost:3367/UploadFile/GTV.png" alt="" id="imgFooter1" runat="server"
-                                replace>
                         </td>
                     </tr>
                 </table>
             </div>
             <br />
             <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <table>
+                <tr>
+                    <td class="col-sm-6 col-md-6 col-lg-6" style="text-align: center">
+                        <img src="http://localhost:3367/UploadFile/icc.jpg" alt="" id="imgFooter1" runat="server"
+                            replace> 
+                    </td>
+                    <td class="col-sm-6 col-md-6 col-lg-6" style="text-align: center">
+                        <img src="http://localhost:3367/UploadFile/GTV.png" alt="" id="imgFooter1" runat="server"
+                            replace> 
+                    </td>
+                </tr>
+            </table>
         </div>
+               <footer>
+  <p style="text-align:left;font-weight: bold; color:Green">International Cricket Council. icc-cricket.com</p>
+  <p></p>
+</footer>
     </div>
 </body>
 </html>
@@ -273,7 +283,6 @@
     <input type="hidden" name="GridHtml2" />
     <input type="submit" id="btnSubmit" value="Export2" />
 }
-
 <script>
     $(function () {
         $("#btnSubmit").click(function () {
@@ -282,4 +291,3 @@
         });
     });
 </script>
-
